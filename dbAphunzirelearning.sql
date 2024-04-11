@@ -66,3 +66,17 @@ CREATE TABLE `tblexercise`(
 --
 --Dumping data for table `tblexercise`
 --
+INSERT INTO `tblexercise` (`ExerciseID` , `LessonID`, `Question`, `ChoiceA`, `ChoiceB`, `ChoiceC`, `ChoiceD`, `Answer`, `ExercisesDate`)
+ VALUES (20240001, 6, 'What is the title of the video', 'My Father', 'My Mother' 'My Brother', 'My Sister', 'My Sister', '0000-00'),
+ (202400002, 6, 'Who is the name of the character in the story?', 'Ben', 'Holly', 'Gaston', 'Wise old elf', 'Gaston', '0000-00');
+
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------
+ --------
+ --Dumping data for table `tbllesson`
+ CREATE TABLE `tabllesson`(
+    `LessonID` text(11) NOT NULL,
+    `LessonCharacter` varchar(90) NOT NULL,
+    `LessonTitle` varchar(90) NOT NULL,
+    `FileLocation` text NOT NULL,
+    `Category` varchar(90) NOT NULL,
+ )ENGINE = InnoDB DEFAULT CHARSET = latin1;
