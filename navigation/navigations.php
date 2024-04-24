@@ -125,9 +125,139 @@
         <p align="left">&copy; MOVING FORWORD WITH EDUCATIIN</p>
     </footer>
     </section>
-    <SCRipt type="text/javascript" lang="javascript" src="<?php echo web_root; ?>js/jquery.min.js"></SCRipt>
-    <SCRipt src="<?php echo web_root; ?>js/bootstrap.min.js"></SCRipt>
+    <script type="text/javascript" lang="javascript" src="<?php echo web_root; ?>js/jquery.min.js"></script>
+    <script src="<?php echo web_root; ?>js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo web_root; ?>js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="<?php echo web_root; ?>js/locales/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" lang="javascript" src="<?php echo web_root; ?>js/jquery.dateTable.js"></script>
+    <script src="<?php echo web_root; ?>assets/iCheck/icheck.min.js"></script>
 
-    
+    <!-- Bootstrap WYSIHTML -->
+    <script type="text/javascript" src="<?php echo web_root; ?>js/jquery-ui.js"></script>
+    <script type="text/javascript" src="<?php echo web_root; ?>js/autofunc.js"></script>
+    <script src="<?php echo web_root; ?>assets/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <!-- page script -->
+
+    <script>
+        $(function() {
+            //add text editor
+            $("#compose-textarea").wysihtml5();
+        }
+    )
+    </script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            var t = $("#example").DataTable( {
+                "bsort" : false,
+                "columnDets" : [ {
+                 "searchable" : false,
+                 "orderable" : false,
+                 "targets" : 0
+                }],
+                //vertical scroll
+                //scrollY : "300px"
+                "scrollCollapse" : true,
+
+                "order" : [[1, 'desc']]
+            });
+            t.on('order.dt search.dt', function(){
+                t.column(0, {search: 'applied', order: 'applied'}).nodes().each(function(cell, i){
+                    cell.innerHTML = i+1;
+                });
+            }).draw();
+        });
+
+        $(document).ready(function() {
+            var t = $("#example2").DataTable( {
+                "bsort" : false,
+                "columnDets" : [ {
+                 "searchable" : false,
+                 "orderable" : false,
+                 "targets" : 0
+                }],
+                //vertical scroll
+                //scrollY : "300px"
+                "scrollCollapse" : true,
+                
+                //ordering start at column 1
+                "order" : [[1, 'desc']]
+            });
+            t.on('order.dt search.dt', function(){
+                t.column(0, {search: 'applied', order: 'applied'}).nodes().each(function(cell, i){
+                    cell.innerHTML = i+1;
+                });
+            }).draw();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $("#date_picker").datetimepicker({
+            format: 'mm/dd/yyyy',
+            language: 'en',
+            weekStart : 1,
+            todayBtn : 1,
+            autclose : 1,
+            todayHighlihgt : 1,
+            startView : 2,
+            minView : 2,
+            forceParse : 0
+        });
+    </script>
+
+    <script>
+        function checkall(selector) {
+            if(document.getElementById('chkall').checked==true)
+
+            {
+                var chkelement=document.getElementsByName(selector);
+                for(var i=0; i<chkelement.length;i++)
+                {
+                    chkelement.item(i).checked=true;
+                }
+            }
+            else{
+                var chkelement=document.getElementsByName(selector);
+                for(var i=0;i<chkelement.length;i++)
+                {
+                    chkelement.item(i).checked=false;
+                }
+            }
+        }
+
+        function checkNumber(textBox){
+            while(textBox.value.length > 0 && isNaN(textBox.value)){
+                textBox.value = textBox.value.substring(0, textBox.value.length -1)
+            }
+            textBox.value = trim(textBox.value);
+        }
+
+        //
+        function checkText(textBox){
+            var alphaExp = /^[a-zA-Z]+$/;
+            while(textBox.value.length > 0 && !textBox.value.match(alphaExp)){
+                textBox.value=textBox.value.substring(0, textBox.value.length -1)
+            }
+            textBox.value=trim(textBox.value);
+        }
+
+        $(document).on("change", ".radios",function(){
+            var exerciseid = $(this).data('id');
+            var value = $(this).val();
+
+            //alert(value)
+            if($(this).is(':checked')){
+                $.ajax({
+                    type: "POST",
+                    url : "validation.php",
+                    datatype: "text",
+                    data : {ExerciseID:exerciseid,value:value},
+                    success : function(data){
+                        //alert(data)
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
