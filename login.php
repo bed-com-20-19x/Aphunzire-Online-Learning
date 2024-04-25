@@ -1,11 +1,34 @@
+<?php
+require_once("include/initialize.php");
+if(isset($_SESSION['StudentID'])){
+    #code ....
+    redirect('index.php');
+}
+?>
+
+<style type="text/css">
+    body{
+        background-color: #fff;
+    }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
+    
+    
     <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    
+    <link  href="<?php echo web_root; ?>css/bootstrap.min.css" rel="stylesheet">
+    <link  href="<?php echo web_root; ?>fonts/font-awesome.min.css" rel="stylesheet" media="screen">
+
+
+    <link rel="stylesheet" type="text/css" href="<?php echo web_root; ?>css/util.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo web_root; ?>css/main.css">
+
 
 </head>
 <body>
@@ -53,6 +76,46 @@
 
         </div>
     </div>
-    
+
+    <?php
+
+    if(isset($_POST['btnLogin'])){
+        $email=trim($_POST['user_email']);
+        $upass=trim($_POST['user_pass']);
+        $h_upass=sha1($upass);
+
+        if($email=='' OR $upass==''){
+            message("Invalid username and password!", "error");
+            redirect (web_root."login.php");
+
+            
+        }else{
+            //it create a new objects of member
+            $student=new Student();
+            //make use of static function and we passed to parematers
+            $res = $student::studentAuthentication($email, $h_upass);
+            if($res==true){
+                redirect(web_root. "index.php");
+
+                echo $_SESSION['StudentID'];
+            }else{
+                message("Account does not exist! please contant Administrator.", "error");
+                redirect(web_root. "login.php");
+            }
+        }
+    }
+    ?>
+
+    <script type="text/javascript" lang="javascript" src="<?php echo web_root; ?>js/jquery.js"></script>
+    <script src="<?php echo web_root; ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo web_root; ?>vendor/select2.min.js"></script>
+    <script src="<?php echo web_root; ?>vendor/tilt/tilt.jquery.min.js"></script>
+
+    <script>
+        $('.jstilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
