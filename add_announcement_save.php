@@ -1,7 +1,7 @@
-<!-- adding the adding the announcement file -->
+<!-- adding the adding the announcement file connection to database -->
 <?php
 include('admin/dbcon.php'); // connecting the database
-include('session.php');
+include('session.php'); // session file for handling sessions
 	$content = $_POST['content'];		
 	$id=$_POST['selector'];
 		$N = count($id);
