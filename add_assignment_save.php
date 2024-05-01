@@ -1,5 +1,6 @@
+<!-- assignment file -->
 <?php
-include('session.php');
+include('session.php'); // including the session file
 require("opener_db.php");
 $conn= $connector->DbConnector();
 
