@@ -5,7 +5,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </a>
-        <span class="brand" href="#">ADMIN Panel</span>
+        <span class="brand" href="#">Admin Panel</span>
         <div class="navbar-collapse collapse">
             <ul class="nav pull-right">
                 <?php $query=mysqli_query($conn, "select * from users where user_id = '$session_id")or die(mysqli_errno());
