@@ -33,6 +33,8 @@ $school_year = $_POST['school_year'];
 
 
 
+// data base connection
+
 $query = mysqli_query($conn,"select * from school_year where school_year = '$school_year'")or die(mysqli_error());
 $count = mysqli_num_rows($query);
 
