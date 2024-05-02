@@ -1,3 +1,4 @@
+<!--  -->
 <?php include('header.php'); ?> // calling the header page
 <?php include('session.php'); ?> // calling the session (server file)
     <body>
