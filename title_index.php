@@ -9,7 +9,7 @@
 							<div class="row-fluid">
 
 						<div class="span4">
-						<img class="index_logo" src="admin/images/Logo.png">
+						<img class="index_logo" src="admin/images/Logoss.png">
 						</div>	
 						<div class="span8">
 						
@@ -17,7 +17,7 @@
 							<p class="chmsc">Carlos Hilado Memorial State College - Talisay</p>
 							<h3>
 
-							<p>M - Learning</p>
+							<p>E - Learning</p>
 						
 							</h3>		
 						</div>
@@ -30,7 +30,7 @@
 						<div class="span12">
 						<br>
 								<div class="motto">
-												<p>CHMSC EXCELS:</p>
+												<p>APHUNZIRE EXCELS FOR EDUCATION</p>
 												<p>Excellence, Competence and Educational</p>
 												<p>Leadership in Science and Technology</p>
 								</div>		
