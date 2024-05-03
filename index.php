@@ -13,7 +13,7 @@
 	
 </style>
 <body id="login">
-    <div class="container" style="position: relative">
+    <div class="container"style="position: relative">
 		<div class="row-fluid">
 			<div class="span6"><div class="title_index"><?php include('title_index.php'); ?></div></div>
 			<div class="span6"><div class="pull-right"><?php include('login_form.php'); ?></div></div>
