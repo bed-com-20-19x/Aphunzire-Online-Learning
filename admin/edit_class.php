@@ -13,7 +13,7 @@
 				</div>
                 <div class="span6" id="">
                      <div class="row-fluid">
-                        <!-- block -->
+                       
                         <div id="block_bg" class="block">
                             <div class="navbar navbar-inner block-header">
                                 <div class="muted pull-left">Class List</div>
@@ -27,7 +27,7 @@
 									<thead>
 										  <tr>
 													<th></th>
-													<th>Course Year And Section</th>
+													<th>Subject</th>
 													<th></th>
 										   </tr>
 										</thead>
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /block -->
+                       
                     </div>
 
 

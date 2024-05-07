@@ -32,7 +32,7 @@
 													<th>Name</th>
 													<th>ID Number</th>
 											
-													<th>Course Yr & Section</th>
+													<th>Subject</th>
 													<th></th>
 										   </tr>
 										</thead>
