@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <title>Amphunzire E-learning  System</title>
+        <title>APHUNZIRE ONLINE LEARNING SYSTEM</title>
 
         <!-- Bootstrap -->
 			<!-- <link href="images/logo.png" rel="icon" type="image"> -->
@@ -28,6 +28,4 @@
 	
 		<script src="vendors/jGrowl/jquery.jgrowl.js"></script>
     </head>
-
-	<!-- Including the database connection -->
 <?php include('dbcon.php'); ?>
