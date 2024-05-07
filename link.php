@@ -13,20 +13,20 @@
 			<li class="divider-vertical"></li>
 		<li class="active"><a href="index.php"><i class="icon-home"></i>&nbsp;Home</a></li>
 			<li class="divider-vertical"></li>
-		<li><a href="about.php"><i class="icon-info-sign"></i>&nbsp;About</a></li>
+		<li><a href="calendar_of_events.php"><i class="icon-info-sign"></i>&nbsp;Calendar of Events</a></li>
 			<li class="divider-vertical"></li>
-		<li><a href="calendar_of_events.php"><i class="icon-calendar"></i>&nbsp;Calendar of Events</a></li>
+		<li><a href="About.php"><i class="icon-calendar"></i>&nbsp;About</a></li>
 			<li class="divider-vertical"></li>
-		<li><a href="#directories" data-toggle="modal"><i class="icon-phone"></i>&nbsp;Directories</a></li>
-				<?php include('directories.php'); ?>
+		<li><a href="#directories" data-toggle="modal"><i class="icon-phone"></i>&nbsp;Contant_Us</a></li>
+				<?php include('Contant_Us.php'); ?>
 			<li class="divider-vertical"></li>
 		<li><a href="#campuses" data-toggle="modal"><i class="icon-building"></i>&nbsp;Campuses</a></li>
 				<?php include('campuses.php'); ?>
 			<li class="divider-vertical"></li>
 		<li><a href="history.php"><i class="icon-file"></i>&nbsp;History</a></li>
-			<li class="divider-vertical"></li>
+			<!-- <li class="divider-vertical"></li>
 		<li><a href="developers.php"><i class="icon-user"></i>&nbsp;Developers</a></li>
-		<li class="divider-vertical"></li>
+		<li class="divider-vertical"></li> -->
 	
 	</ul>
 							</div>

@@ -8,13 +8,13 @@
 							</div>
 							<div class="row-fluid">
 
-						<div class="span4">
+						<!-- <div class="span4">
 						<img class="index_logo" src="admin/images/Log.png">
-						</div>	
+						</div>	 -->
 						<div class="span8">
 						
 								<div class="title">
-							<p class="chmsc">Carlos Hilado Memorial State College - Talisay</p>
+							<p class="chmsc">promoting education in malawi</p>
 							<h3>
 
 							<p>E - Learning</p>
@@ -33,6 +33,9 @@
 												<p>APHUNZIRE EXCELS FOR EDUCATION</p>
 												<p>Excellence, Competence and Educational</p>
 												<p>Leadership in Science and Technology</p>
-								</div>		
+								</div>	
+									
 						</div>		
 				</div>
+
+				<link rel="stylesheet" href="home">

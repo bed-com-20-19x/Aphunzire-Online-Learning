@@ -12,19 +12,19 @@
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
-                                    <?php
-                                    $mission_query = mysqli_query($conn, "select * from content where title = 'mission")or die(mysqli_error());
-                                    $mission_row = mysqli_fetch_array($mission_query);
-                                    echo $mission_row['content'];
-                                    ?>
+                                <?php
+											$mission_query = mysqli_query($conn,"select * from content where title  = 'mission' ")or die(mysqli_error());
+											$mission_row = mysqli_fetch_array($mission_query);
+											echo $mission_row['content'];
+										?>
 
                                     <hr>
 
                                     <?php
-                                    $mission_query = mysqli_query($conn, "select * from content where title = 'vision")or die(mysqli_error());
-                                    $mission_row = mysqli_fetch_array($mission_query);
-                                    echo $mission_row['content'];
-                                   ?>
+											$mission_query = mysqli_query($conn,"select * from content where title  = 'vision' ")or die(mysqli_error());
+											$mission_row = mysqli_fetch_array($mission_query);
+											echo $mission_row['content'];
+										?>
                                 </div>
 
                             </div>
