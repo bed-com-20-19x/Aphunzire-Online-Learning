@@ -24,7 +24,7 @@
 									<thead>
 										  <tr>
 													<th></th>
-													<th>Course Year And Section</th>
+													<th>CLASS OF THE YEAR</th>
 													<th></th>
 										   </tr>
 										</thead>
