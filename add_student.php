@@ -51,7 +51,7 @@
                                
                                     <th>Photo</th>
                                     <th>Name</th>
-                                    <th>Course Year and Section</th>
+                                    <th>CLASS OF ACADEMIC YEAR</th>
                   
                                     <th></th>
                                 </tr>
