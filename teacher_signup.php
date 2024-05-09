@@ -5,7 +5,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
-// $department_id = $_POST['department_id'];
+$department_id = $_POST['department_id'];
 
 $query = mysqli_query($conn,"select * from teacher where  firstname='$firstname' and lastname='$lastname' and department_id = '$department_id'")or die(mysqli_error());
 $row = mysqli_fetch_array($query);

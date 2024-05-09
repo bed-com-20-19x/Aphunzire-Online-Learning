@@ -276,7 +276,7 @@ CREATE TABLE `event` (
 --
 
 INSERT INTO `event` (`event_id`, `event_title`, `teacher_class_id`, `date_start`, `date_end`) VALUES
-(12, 'Orientation with the Parents of the College Freshmen', 0, '06/04/2013', '06/04/2013'),
+(12, ' 	  Orientation with the Parents of the College Freshmen', 0, '06/04/2013', '06/04/2013'),
 (13, 'Start of Classes', 0, '11/04/2013', '11/04/2013'),
 (14, 'Intercampus Sports and Cultural Fest/College Week', 0, '11/19/2013', '11/22/2013'),
 (15, 'Long Test', 113, '12/05/2013', '12/06/2013'),
