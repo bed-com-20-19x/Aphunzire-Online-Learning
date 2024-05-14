@@ -1,10 +1,11 @@
 <?php
-// start session
+//Start session
 session_start();
-// check whether the session variable SESS_MEMBER_ID is present or not
-if(!isset($_SESSION['id']) || ($_SESSION['id'] =='')){
+//Check whether the session variable SESS_MEMBER_ID is present or not
+if (!isset($_SESSION['id']) || ($_SESSION['id'] == '')) {
     header("location: index.php");
     exit();
 }
+
 $session_id=$_SESSION['id'];
 ?>

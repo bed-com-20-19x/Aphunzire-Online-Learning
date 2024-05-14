@@ -7,7 +7,7 @@
 				<?php include('backpack_sidebar_teacher.php'); ?>
                 <div class="span9" id="content">
                      <div class="row-fluid">
-						
+					    <!-- breadcrumb -->	
 									<ul class="breadcrumb">
 										<?php
 										$school_year_query = mysqli_query($conn,"select * from school_year order by school_year DESC")or die(mysqli_error());
@@ -18,7 +18,8 @@
 										<li><a href="#">School Year: <?php echo $school_year_query_row['school_year']; ?></a><span class="divider">/</span></li>
 										<li><a href="#"><b>Backpack</b></a></li>
 									</ul>
-						
+						 <!-- end breadcrumb -->
+                        <!-- block -->
                         <div id="block_bg" class="block">
                             <div class="navbar navbar-inner block-header">
                                 <div id="" class="muted pull-right"></div>
@@ -76,6 +77,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- /block -->
                     </div>
                 </div>
             </div>

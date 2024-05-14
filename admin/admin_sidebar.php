@@ -19,14 +19,14 @@
 						<li>
                             <a href="teachers.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> Teachers</a>
                         </li>
-							<li>
+						<li>
                             <a href="downloadable.php"><i class="icon-chevron-right"></i><i class="icon-download"></i> Downloadable Materials</a>
                         </li>
 						<li>
                             <a href="assignment.php"><i class="icon-chevron-right"></i><i class="icon-upload"></i> Uploaded Assignments</a>
                         </li>
 						<li>
-                            <a href="content.php"><i class="icon-chevron-right"></i><i class="icon-file"></i> Content</a>
+                        <a href="content.php"><i class="icon-chevron-right"></i><i class="icon-file"></i> Content</a>
                         </li>
 						<li>
                             <a href="user_log.php"><i class="icon-chevron-right"></i><i class="icon-file"></i> User Log</a>

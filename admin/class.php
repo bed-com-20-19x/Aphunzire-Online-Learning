@@ -24,7 +24,7 @@
 									<thead>
 										  <tr>
 													<th></th>
-													<th>CLASS OF THE YEAR</th>
+													<th>CLASSES</th>
 													<th></th>
 										   </tr>
 										</thead>

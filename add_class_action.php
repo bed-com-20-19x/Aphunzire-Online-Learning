@@ -1,4 +1,3 @@
-<!-- class controller -->
 <?php
 include('dbcon.php');
 $session_id = $_POST['session_id'];

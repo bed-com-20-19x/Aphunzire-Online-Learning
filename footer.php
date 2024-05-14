@@ -1,8 +1,7 @@
 <center>
 		<footer>
 		
-		<p>MOVING WITH EDUCATION IN MALAWI 2013</p>
-			<!-- <p>Programmed by: John Kevin Lorayna BSIS 4-A</p> -->
+		<p style="font-size: 28px; color: white;">Moving Forward With Education In Malawi</p>
 		</footer>
 </center>
 

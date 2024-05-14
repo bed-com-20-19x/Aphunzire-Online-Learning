@@ -25,6 +25,6 @@
 			</li>
 			<li class=""><a href="backpack.php"><i class="icon-chevron-right"></i><i class="icon-suitcase"></i>&nbsp;Backpack</a></li>
 		</ul>
-		<?php  ?>	
+		<?php /* include('search_other_class.php'); */ ?>	
 </div>
 

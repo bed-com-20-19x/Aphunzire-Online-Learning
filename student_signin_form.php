@@ -1,5 +1,5 @@
-			<form id="signin_student" class="form-signin" method="post">
-			<h3 class="form-signin-heading"><i class="icon-lock"></i> Sign up as Student</h3>
+			<form id="signin_student" class="form-signin" method="post" style="color: white;">
+			<h3 class="form-signin-heading" style="color: white;"><i class="icon-lock"></i> Sign up as Student</h3>
 			<input type="text" class="input-block-level" id="username" name="username" placeholder="ID Number" required>
 			<input type="text" class="input-block-level" id="firstname" name="firstname" placeholder="Firstname" required>
 			<input type="text" class="input-block-level" id="lastname" name="lastname" placeholder="Lastname" required>
@@ -40,7 +40,7 @@
 						success: function(html){
 						if(html=='true')
 						{
-						$.jGrowl("Welcome to aphunzire E-Learning Management System", { header: 'Sign up Success' });
+						$.jGrowl("Welcome to CHMSC Learning Management System", { header: 'Sign up Success' });
 						var delay = 2000;
 							setTimeout(function(){ window.location = 'dashboard_student.php'  }, delay);  
 						}else if(html=='false'){

@@ -1,57 +1,52 @@
 <?php include('header_dashboard.php'); ?>
-<?php include('seeeion.php'); ?>
-<?php $get_id = $_GET['ID']; ?>
-<body>
-    <?php include('navbar_teacher.php'); ?>
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <?php include('assignment_link.php'); ?>
-            <div class="span6" id="content">
-                <div class="row-fluid">
-                    <!-- breadcrumb -->
-                    <?php $class_query = mysqli_query($conn, "select * from teacher_class
-                    LEFT JOIN class ON class.class_id = teacher_class.class_id
-                    LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
-                    where teacher_class_id = '$get_id'")or die(mysqli_error());
-                    $class_row = mysqli_fetch_array($class_query)
-                    ?>
-                    <ul class="breadcrumb">
+<?php include('session.php'); ?>
+<?php $get_id = $_GET['id']; ?>
+    <body>
+		<?php include('navbar_teacher.php'); ?>
+        <div class="container-fluid">
+            <div class="row-fluid">
+				<?php include('assignment_link.php'); ?>
+                <div class="span6" id="content">
+                     <div class="row-fluid">
+					   <!-- breadcrumb -->
+										<?php $class_query = mysqli_query($conn,"select * from teacher_class
+										LEFT JOIN class ON class.class_id = teacher_class.class_id
+										LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
+										where teacher_class_id = '$get_id'")or die(mysqli_error());
+										$class_row = mysqli_fetch_array($class_query);
+										?>
+					     <ul class="breadcrumb">
 							<li><a href="#"><?php echo $class_row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $class_row['subject_code']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#">School Year: <?php echo $class_row['school_year']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><b>Uploaded Assignments</b></a></li>
 						</ul>
-                        <!-- end breadcrumb -->
-
+						 <!-- end breadcrumb -->
                         <!-- block -->
-
-                        <div id="block_bg" class="bock">
+                        <div id="block_bg" class="block">
                             <div class="navbar navbar-inner block-header">
-                                <div id="" class="muted pulled-left"></div>
+                                <div id="" class="muted pull-left"></div>
                             </div>
-
                             <div class="block-content collapse in">
-                                <div class="spasn12">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Date Upload</th>
-                                                <th>File Name</th>
-                                                <th>Description</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-
-                                        <tbody>
-                                            <?php 
-                                            $query = mysqli_query($conn, "select * FROM assignment where class_id = '$get_id' and teacher_id = '$session_id' order by fdatein DESC")or die(mysqli_error());
-                                            while($row = mysqli_fetch_array($query)){
-                                                $id = $row['assignment_id'];
-                                                $floc = $row['floc'];
-                                            
-                                            ?>
-
-                                    <tr>
+                                <div class="span12">
+  									<table cellpadding="0" cellspacing="0" border="0" class="table" id="">
+										<thead>
+										        <tr>
+												<th>Date Upload</th>
+												<th>File Name</th>
+												<th>Description</th>
+												<th></th>
+												</tr>
+										</thead>
+										<tbody>
+											
+                              		<?php
+										$query = mysqli_query($conn,"select * FROM assignment where class_id = '$get_id' and teacher_id = '$session_id' order by fdatein DESC ")or die(mysqli_error());
+										while($row = mysqli_fetch_array($query)){
+										$id  = $row['assignment_id'];
+										$floc  = $row['floc'];
+									?>                              
+								<tr>
 										 <td><?php echo $row['fdatein']; ?></td>
                                          <td><?php  echo $row['fname']; ?></td>
                                          <td><?php echo $row['fdesc']; ?></td>                                      
@@ -90,25 +85,18 @@
 														</script>
                                 </tr>
 						 <?php } ?>
-                                        </tbody>
-                                    </table>
-
+										</tbody>
+									</table>
                                 </div>
-
                             </div>
-
                         </div>
-                    <!-- /block -->
-
-
+                        <!-- /block -->
+                    </div>
                 </div>
-
+				<?php include('assignment_sidebar.php') ?>
             </div>
-            <?php include('assignment_sidebar.php') ; ?>
-
+		<?php include('footer.php'); ?>
         </div>
-        <?php include('footer.php'); ?>
-
-    </div>
-    <?php include('script.php'); ?>
-</body>
+		<?php include('script.php'); ?>
+    </body>
+</html>

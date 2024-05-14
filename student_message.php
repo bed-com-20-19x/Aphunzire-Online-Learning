@@ -6,7 +6,8 @@
             <div class="row-fluid">
 				<?php include('student_message_sidebar.php'); ?>
                <div class="span6" id="content">
-                     <div class="row-fluid">	
+                     <div class="row-fluid">
+					    <!-- breadcrumb -->	
 					     <ul class="breadcrumb">
 								<?php
 								$school_year_query = mysqli_query($conn,"select * from school_year order by school_year DESC")or die(mysqli_error());
@@ -17,7 +18,9 @@
 								<li><a href="#"><b>Inbox</b></a><span class="divider">/</span></li>
 								<li><a href="#">School Year: <?php echo $school_year_query_row['school_year']; ?></a></li>
 						</ul>
-						
+						 <!-- end breadcrumb -->
+					 
+                        <!-- block -->
                         <div id="block_bg" class="block">
                             <div class="navbar navbar-inner block-header">
                                 <div id="" class="muted pull-left"></div>
@@ -87,7 +90,7 @@
                                 </div>
                             </div>
                         </div>
-                       
+                        <!-- /block -->
                     </div>
 					
 <script type="text/javascript">
@@ -110,8 +113,25 @@
 	});
 </script>
 			<script>
-
-			
+/* 			jQuery(document).ready(function(){
+			jQuery("#reply").submit(function(e){
+					e.preventDefault();
+					var id = $('.reply').attr("id");
+					var _this = $(e.target);
+					var formData = jQuery(this).serialize();
+					$.ajax({
+						type: "POST",
+						url: "reply.php",
+						data: formData,
+						success: function(html){
+						$.jGrowl("Message Successfully Sent", { header: 'Message Sent' });
+						$('#reply'+id).modal('hide');
+						}
+						
+					});
+					return false;
+				});
+			}); */
 			</script>
 	
 

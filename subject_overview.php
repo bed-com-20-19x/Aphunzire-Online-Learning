@@ -41,7 +41,7 @@
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
-										<?php echo $row['content.php']; ?>
+										<?php echo $row['content']; ?>
                                 </div>
                             </div>
                         </div>

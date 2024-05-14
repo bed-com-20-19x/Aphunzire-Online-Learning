@@ -1,6 +1,7 @@
 <div class="span3" id="">
 	<div class="row-fluid">
 	
+				      <!-- block -->
                         <div class="block">
                             <div class="navbar navbar-inner block-header">
                                 <div id="" class="muted pull-left"><h4><i class="icon-pencil"></i> Create Message</h4></div>
@@ -77,6 +78,8 @@
 								</div>
                             </div>
                         </div>
-                    
+                        <!-- /block -->
+						
+
 	</div>
 </div>

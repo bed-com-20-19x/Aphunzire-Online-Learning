@@ -21,8 +21,8 @@
 						success: function(html){
 						if(html=='true')
 						{
-						$.jGrowl("Welcome to CHMSC Learning Management System", { header: 'Access Granted' });
-						var delay = 2000;
+						$.jGrowl("Welcome to Aphunzire E-Learning platform", { header: 'Access Granted' });
+						var delay = 500;
 							setTimeout(function(){ window.location = 'dashboard.php'  }, delay);  
 						}
 						else

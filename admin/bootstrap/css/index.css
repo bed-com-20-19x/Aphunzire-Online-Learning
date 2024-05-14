@@ -1,5 +1,5 @@
 body { 
-	background: url(../../images/index2.png) no-repeat center center fixed;
+	background: url(../../images/index3.png) no-repeat center center fixed;
 	-webkit-background-size: cover !important; 
 	-moz-background-size: cover !important; 
 	-o-background-size: cover !important; 
@@ -167,10 +167,12 @@ body{
 	 max-height: 196px;
 }
 footer{
-     margin-right: 42px;
+	text-align: center;
+     /* margin-right: 42px; */
 	 margin-top: 50px;
      color: #FFFFFF;
 	font-weight:bold;
+	/* background-color: blue; */
 }
 .motto{
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);

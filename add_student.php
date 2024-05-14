@@ -1,4 +1,3 @@
-<!-- student management file  -->
 <?php include('header_dashboard.php'); ?>
 <?php include('session.php'); ?>
 <?php $get_id = $_GET['id']; ?>
@@ -51,7 +50,7 @@
                                
                                     <th>Photo</th>
                                     <th>Name</th>
-                                    <th>CLASS OF ACADEMIC YEAR</th>
+                                    <th>Course Year and Section</th>
                   
                                     <th></th>
                                 </tr>

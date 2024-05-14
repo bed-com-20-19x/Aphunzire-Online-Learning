@@ -1,4 +1,3 @@
-<!-- file for controlling the downloading the files posted -->
 <?php include('header_dashboard.php'); ?>
 <?php include('session.php'); ?>
     <body id="class_div">

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <title>Aphunzire online Learning</title>
-		<meta name="description" content="Aphunzire online Learning">
-		<meta name="keywords" content="Aphunzire">
+        <title>Aphunzire E-Learning</title>
+		<meta name="description" content="Aphunzire E-Learning">
+		<meta name="keywords" content="CHMSC LMS,CHMSCLMS,CHMSC,LMS,CHMSCLMS.COMXA">
+		<meta name="author" content="JOHN KEVIN LORAYNA">
 		<meta charset="UTF-8">
         <!-- Bootstrap -->
 				<link href="admin/images/favicon.ico" rel="icon" type="image">

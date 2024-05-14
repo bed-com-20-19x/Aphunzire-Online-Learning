@@ -7,7 +7,7 @@
 				<?php include('student_notification_sidebar.php'); ?>
                 <div class="span9" id="content">
                      <div class="row-fluid">
-					   
+					    <!-- breadcrumb -->
 				
 									
 					     <ul class="breadcrumb">
@@ -19,7 +19,11 @@
 							<li><a href="#"><b>My Class</b></a><span class="divider">/</span></li>
 							<li><a href="#">School Year: <?php echo $school_year_query_row['school_year']; ?></a></li>
 						</ul>
-						
+						 <!-- end breadcrumb -->
+					 
+				
+					 
+                        <!-- block -->
                         <div id="block_bg" class="block">
                             <div class="navbar navbar-inner block-header">
                                 <div id="" class="muted pull-left"></div>
@@ -98,7 +102,7 @@
                                 </div>
                             </div>
                         </div>
-                    
+                        <!-- /block -->
                     </div>
 
 
