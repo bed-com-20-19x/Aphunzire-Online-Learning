@@ -1,6 +1,6 @@
 <?php include('header_dashboard.php'); ?>
 <?php include('session.php'); ?>
-    <body id="class_div">
+    <body id="class_div" style="margin-top: 40px;">
 		<?php include('navbar_teacher.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">

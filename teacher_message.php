@@ -1,6 +1,6 @@
 <?php include('header_dashboard.php'); ?>
 <?php include('session.php'); ?>
-    <body>
+    <body style="margin-top: 40px;">
 		<?php include('navbar_teacher.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
@@ -34,6 +34,9 @@
 										</li>
 										<li class="">
 										<a href="sent_message.php"><i class="icon-envelope-alt"></i>Sent messages</a>
+										</li>
+										<li class="">
+										<a href="create_message_teacher.php"><i class="icon-envelope-alt"></i>Create message</a>
 										</li>
 										</ul>
 										

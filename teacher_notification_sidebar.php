@@ -1,4 +1,4 @@
-<div class="span3" id="sidebar">
+<div class="span3" id="sidebar" style="margin-top: 40px;">
 	<img id="avatar" class="img-polaroid" src="admin/<?php echo $row['location']; ?>">
 	<?php include('teacher_count.php'); ?>
 	<ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">

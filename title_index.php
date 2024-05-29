@@ -14,7 +14,7 @@
 						<div class="span8">
 						
 								<div class="title">
-							<!-- <p class="chmsc">Carlos Hilado Memorial State College - Talisay</p> -->
+							<p class="chmsc" style="color: white;">Promoting Education In Malawi</p>
 							<h3>
 
 							<p style="font-size: 29px; color: white; font-weight: bold;">APHUNZIRE E-LEARNING</p>
@@ -31,7 +31,7 @@
 						<br>
 								<div class="motto">
 												
-												<p>Promoting Education In Malawi</p>
+												<!-- <p>Promoting Education In Malawi</p> -->
 								</div>		
 						</div>		
 				</div>
