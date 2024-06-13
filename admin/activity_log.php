@@ -1,7 +1,8 @@
 <!--  -->
-<?php include('header.php'); ?> // calling the header page
-<?php include('session.php'); ?> // calling the session (server file)
-    <body>
+<?php include('header.php'); ?> 
+<?php include('session.php'); ?> 
+
+    <body style="margin-top: 40px;">
 		<?php include('navbar.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">

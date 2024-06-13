@@ -1,7 +1,7 @@
 <!-- importing header -->
 <?php include('header.php'); ?>
 <?php include('session.php'); ?>
-    <body>
+    <body style="margin-top: 40px;">
         <!-- importing navbar -->
 		<?php include('navbar.php'); ?>
         <div class="container-fluid">
